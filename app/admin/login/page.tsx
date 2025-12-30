@@ -83,7 +83,7 @@ export default function AdminLoginPage() {
 
   return (
     <div
-      className="flex min-h-screen w-full items-center justify-center p-6"
+      className="flex min-h-screen w-full items-center justify-center p-6 text-black bg-black"
       style={{
         background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
       }}
@@ -93,8 +93,8 @@ export default function AdminLoginPage() {
           <CardHeader className="space-y-1 text-center">
             <div className="flex justify-center mb-4">
               <div className="flex items-center gap-2 text-purple-600">
-                <Sparkles className="h-8 w-8" />
-                <span className="text-2xl font-bold font-condor">STARDUST</span>
+                
+                <span className="font-bold font-condor text-6xl text-black">{"E-ZENZ"}</span>
               </div>
             </div>
             <CardTitle className="text-2xl">Backoffice</CardTitle>

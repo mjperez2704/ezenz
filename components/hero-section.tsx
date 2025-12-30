@@ -9,7 +9,7 @@ export function HeroSection() {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 hidden md:block">
         <Image
-          src="/images/design-mode/seccion_hero_bien.png"
+          src="/images/fondo-seccion-hero.png"
           alt="Cosmic background"
           fill
           className="object-cover"
@@ -28,6 +28,15 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-center flex flex-col items-center justify-end h-full pb-16">
         <div className="animate-fadeIn flex flex-col items-center gap-6 md:mt-[600px]">
+          <div className="flex-shrink-0">
+            <Image
+              src="/images/design-mode/logo_header.png"
+              alt="EZENZ logo"
+              width={505}
+              height={151}
+              className="rounded-md"
+            />
+          </div>
           <div>
             <Link href="/productos">
               <Button className="bg-white hover:bg-white/90 text-black border-none px-12 sm:px-16 py-6 sm:py-7 text-base sm:text-lg tracking-[0.3em] uppercase font-bold">
