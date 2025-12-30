@@ -21,7 +21,7 @@ export function HeroSection() {
 
       <div className="absolute inset-0 md:hidden bg-white flex items-center justify-center">
         <div className="w-full max-w-sm px-8">
-          <Image src="/logos/logo.png" alt="E-zenz Logo" width={400} height={400} className="w-full h-auto" priority />
+          <Image src="/images/design-mode/logo_header.png" alt="E-zenz Logo" width={400} height={300} className="w-full h-auto" priority />
         </div>
       </div>
 
