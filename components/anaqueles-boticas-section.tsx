@@ -21,10 +21,10 @@ export function AnaquelesBóticasSection() {
         {/* ANAQUELES Section (Top Half - Right Aligned) */}
         <div className="w-full min-h-[50vh] flex items-center justify-end p-8 lg:p-16 lg:pr-32">
           <div className="max-w-2xl w-full">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white mb-8 tracking-[0.2em] uppercase text-center lg:text-right">
+            <h2 className="text-3xl text-white mb-8 tracking-[0.2em] uppercase text-center lg:text-center font-semibold md:text-6xl">
               ANAQUELES
             </h2>
-            <p className="text-white/90 text-lg mb-12 font-light text-center lg:text-right">
+            <p className="text-white/90 text-lg mb-12 text-center lg:text-center font-medium">
               Contamos con bodegas principales destinadas a:
             </p>
 
@@ -59,12 +59,12 @@ export function AnaquelesBóticasSection() {
         </div>
 
         {/* BÓTICA Section (Bottom Half - Left Aligned) */}
-        <div className="w-full min-h-[50vh] flex items-center justify-start p-8 lg:p-16 lg:pl-32">
+        <div className="w-full min-h-[50vh] flex items-center justify-start p-8 lg:p-16 lg:pl-32 bg-transparent text-card shadow-none">
           <div className="max-w-2xl w-full">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white mb-8 tracking-[0.2em] uppercase text-center lg:text-left">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl mb-8 tracking-[0.2em] uppercase text-center font-semibold text-black lg:text-center">
               BÓTICA
             </h2>
-            <p className="text-white/90 text-lg mb-12 leading-relaxed text-center lg:text-left">
+            <p className="text-lg mb-12 leading-relaxed text-center font-medium lg:text-center text-black">
               Nuevo proyecto con modelo escalable y visión a futuro, diseñado para evolucionar hacia un formato de
               franquicia.
             </p>
@@ -77,13 +77,13 @@ export function AnaquelesBóticasSection() {
               <div className="relative flex justify-between gap-4">
                 {/* Point 1 */}
                 <div className="flex flex-col items-center w-1/3">
-                  <div className="w-4 h-4 rounded-full bg-white z-10 mb-4 shadow-[0_0_10px_rgba(255,255,255,0.5)]"></div>
-                  <p className="text-white text-sm font-bold text-center">Call Center</p>
+                  <div className="w-4 h-4 rounded-full z-10 mb-4 shadow-[0_0_10px_rgba(255,255,255,0.5)] bg-black"></div>
+                  <p className="text-sm font-bold text-center text-black bg-transparent">Call Center</p>
                 </div>
                 {/* Point 2 */}
                 <div className="flex flex-col items-center w-1/3">
-                  <div className="w-4 h-4 rounded-full bg-white z-10 mb-4 shadow-[0_0_10px_rgba(255,255,255,0.5)]"></div>
-                  <p className="text-white text-sm font-bold text-center">
+                  <div className="w-4 h-4 rounded-full z-10 mb-4 shadow-[0_0_10px_rgba(255,255,255,0.5)] bg-black text-black"></div>
+                  <p className="text-sm font-bold text-center text-black">
                     Showroom de
                     <br />
                     material de empaque
@@ -93,8 +93,8 @@ export function AnaquelesBóticasSection() {
                 </div>
                 {/* Point 3 */}
                 <div className="flex flex-col items-center w-1/3">
-                  <div className="w-4 h-4 rounded-full bg-white z-10 mb-4 shadow-[0_0_10px_rgba(255,255,255,0.5)]"></div>
-                  <p className="text-white text-sm font-bold text-center">
+                  <div className="w-4 h-4 rounded-full z-10 mb-4 shadow-[0_0_10px_rgba(255,255,255,0.5)] bg-black"></div>
+                  <p className="text-sm font-bold text-center text-black bg-transparent opacity-100">
                     Catálogo digital de materias
                     <br />
                     primas y productos terminados
