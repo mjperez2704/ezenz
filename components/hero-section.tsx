@@ -6,7 +6,7 @@ import Image from "next/image"
 
 export function HeroSection() {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative bg-black h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 hidden md:block">
         <Image
           src="/images/fondo-seccion-hero.png"
