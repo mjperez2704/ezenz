@@ -19,15 +19,21 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-black/20" />
       </div>
 
-      <div className="absolute inset-0 md:hidden bg-white flex items-center justify-center">
+      <div className="absolute inset-0 md:hidden bg-black flex items-center justify-center">
         <div className="w-full max-w-sm px-8">
-          <Image src="/images/design-mode/logo_header.png" alt="E-zenz Logo" width={400} height={300} className="w-full h-auto" priority />
+          <Image
+            src="/images/design-mode/logo_header.png"
+            alt="E-zenz Logo"
+            width={400}
+            height={300}
+            className="w-full h-auto"
+            priority
+          />
         </div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-center flex flex-col items-center justify-end h-full pb-16">
-        <div className="animate-fadeIn flex flex-col items-center gap-6 md:mt-[600px]">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-center hidden md:flex flex-col items-center justify-end h-full pb-16">
+        <div className="animate-fadeIn flex flex-col items-center gap-6">
           <div className="flex-shrink-0">
             <Image
               src="/images/design-mode/logo_header.png"
