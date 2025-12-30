@@ -1,0 +1,258 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* ================================
+   FUENTES PERSONALIZADAS
+   ================================ */
+
+/* Configurando fuente Anisette como fuente principal del sitio */
+@font-face {
+  font-family: "Anisette";
+  src: url("/fonts/Anisette_Std_Petite.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ====== ASTROBIA ====== */
+@font-face {
+  font-family: "Astrobia";
+  src: url("/fonts/Astrobia.woff2") format("woff2"), url("/fonts/Astrobia.woff") format("woff"),
+    url("/fonts/Astrobia.otf") format("opentype"), url("/fonts/Astrobia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ====== CONDOR ======
+   (Tú ya generaste tus .woff2 / .woff)
+*/
+@font-face {
+  font-family: "Condor";
+  src: url("/fonts/condor-black-italic.woff2") format("woff2"), url("/fonts/condor-black-italic.woff") format("woff"),
+    url("/fonts/condor-black-italic.otf") format("opentype"), url("/fonts/condor-black-italic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ====== DIN CONDENSED BOLD ======
+   (Tú ya tienes los .woff2 / .woff)
+*/
+@font-face {
+  font-family: "DinCondensedBold";
+  src: url("/fonts/DINCondensed-Bold.woff2") format("woff2"), url("/fonts/DINCondensed-Bold.woff") format("woff"),
+    url("/fonts/DINCondensed-Bold.otf") format("opentype"), url("/fonts/DINCondensed-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Actualización de colores exactos según especificaciones de STARDUST */
+  --background: oklch(0.973 0.0133 286.1503);
+  --foreground: oklch(0.3015 0.0572 282.4176);
+  --card: oklch(1.0 0 0);
+  --card-foreground: oklch(0.3015 0.0572 282.4176);
+  --popover: oklch(1.0 0 0);
+  --popover-foreground: oklch(0.3015 0.0572 282.4176);
+
+  /* Colores principales STARDUST */
+  --primary: oklch(0.5417 0.179 288.0332);
+  --primary-foreground: oklch(1.0 0 0);
+  --secondary: oklch(0.9174 0.0435 292.6901);
+  --secondary-foreground: oklch(0.4143 0.1039 288.1742);
+  --accent: oklch(0.9221 0.0373 262.141);
+  --accent-foreground: oklch(0.3015 0.0572 282.4176);
+
+  --muted: oklch(0.958 0.0133 286.1454);
+  --muted-foreground: oklch(0.5426 0.0465 284.7435);
+  --destructive: oklch(0.6861 0.2061 14.9941);
+  --destructive-foreground: oklch(1.0 0 0);
+  --border: oklch(0.9115 0.0216 285.9625);
+  --input: oklch(0.9115 0.0216 285.9625);
+  --ring: oklch(0.5417 0.179 288.0332);
+
+  --chart-1: oklch(0.5417 0.179 288.0332);
+  --chart-2: oklch(0.7042 0.1602 288.988);
+  --chart-3: oklch(0.5679 0.2113 276.7065);
+  --chart-4: oklch(0.6356 0.1922 281.8054);
+  --chart-5: oklch(0.4509 0.1758 279.3838);
+  --radius: 0.5rem;
+  --sidebar: oklch(0.958 0.0133 286.1454);
+  --sidebar-foreground: oklch(0.3015 0.0572 282.4176);
+  --sidebar-primary: oklch(0.5417 0.179 288.0332);
+  --sidebar-primary-foreground: oklch(1.0 0 0);
+  --sidebar-accent: oklch(0.9221 0.0373 262.141);
+  --sidebar-accent-foreground: oklch(0.3015 0.0572 282.4176);
+  --sidebar-border: oklch(0.9115 0.0216 285.9625);
+  --sidebar-ring: oklch(0.5417 0.179 288.0332);
+}
+
+.dark {
+  --background: oklch(0.1743 0.0227 283.7998);
+  --foreground: oklch(0.9185 0.0257 285.8834);
+  --card: oklch(0.2284 0.0384 282.9324);
+  --card-foreground: oklch(0.9185 0.0257 285.8834);
+  --popover: oklch(0.2284 0.0384 282.9324);
+  --popover-foreground: oklch(0.9185 0.0257 285.8834);
+  --primary: oklch(0.7162 0.1597 290.3962);
+  --primary-foreground: oklch(0.1743 0.0227 283.7998);
+  --secondary: oklch(0.3139 0.0736 283.4591);
+  --secondary-foreground: oklch(0.8367 0.0849 285.9111);
+  --muted: oklch(0.271 0.0621 281.4377);
+  --muted-foreground: oklch(0.7166 0.0462 285.1741);
+  --accent: oklch(0.3354 0.0828 280.9705);
+  --accent-foreground: oklch(0.9185 0.0257 285.8834);
+  --destructive: oklch(0.6861 0.2061 14.9941);
+  --destructive-foreground: oklch(1.0 0 0);
+  --border: oklch(0.3261 0.0597 282.5832);
+  --input: oklch(0.3261 0.0597 282.5832);
+  --ring: oklch(0.7162 0.1597 290.3962);
+  --sidebar: oklch(0.2284 0.0384 282.9324);
+  --sidebar-foreground: oklch(0.9185 0.0257 285.8834);
+  --sidebar-primary: oklch(0.7162 0.1597 290.3962);
+  --sidebar-primary-foreground: oklch(0.1743 0.0227 283.7998);
+  --sidebar-accent: oklch(0.3354 0.0828 280.9705);
+  --sidebar-accent-foreground: oklch(0.9185 0.0257 285.8834);
+  --sidebar-border: oklch(0.3261 0.0597 282.5832);
+  --sidebar-ring: oklch(0.7162 0.1597 290.3962);
+  --chart-1: oklch(0.7162 0.1597 290.3962);
+  --chart-2: oklch(0.6382 0.1047 274.9117);
+  --chart-3: oklch(0.7482 0.1235 244.7492);
+  --chart-4: oklch(0.7124 0.0977 186.6761);
+  --chart-5: oklch(0.7546 0.1831 346.8124);
+}
+
+/* Aplicando Anisette como fuente principal en todas las variantes */
+@theme inline {
+  --font-sans: "Anisette", system-ui, sans-serif;
+  --font-montserrat: "Anisette", system-ui, sans-serif;
+  --font-serif: "Anisette", system-ui, sans-serif;
+  --font-mono: "Anisette", system-ui, sans-serif;
+  --font-condor: "Condor", system-ui, sans-serif;
+  --font-astrobia: "Astrobia", system-ui, sans-serif;
+  --font-din: "DinCondensedBold", system-ui, sans-serif;
+  --font-anisette: "Anisette", system-ui, sans-serif;
+
+  /* Definiendo valores directos en lugar de referencias var() para evitar errores de propiedades vacías */
+  --color-background: oklch(0.973 0.0133 286.1503);
+  --color-foreground: oklch(0.3015 0.0572 282.4176);
+  --color-card: oklch(1.0 0 0);
+  --color-card-foreground: oklch(0.3015 0.0572 282.4176);
+  --color-popover: oklch(1.0 0 0);
+  --color-popover-foreground: oklch(0.3015 0.0572 282.4176);
+  --color-primary: oklch(0.5417 0.179 288.0332);
+  --color-primary-foreground: oklch(1.0 0 0);
+  --color-secondary: oklch(0.9174 0.0435 292.6901);
+  --color-secondary-foreground: oklch(0.4143 0.1039 288.1742);
+  --color-muted: oklch(0.958 0.0133 286.1454);
+  --color-muted-foreground: oklch(0.5426 0.0465 284.7435);
+  --color-accent: oklch(0.9221 0.0373 262.141);
+  --color-accent-foreground: oklch(0.3015 0.0572 282.4176);
+  --color-destructive: oklch(0.6861 0.2061 14.9941);
+  --color-destructive-foreground: oklch(1.0 0 0);
+  --color-border: oklch(0.9115 0.0216 285.9625);
+  --color-input: oklch(0.9115 0.0216 285.9625);
+  --color-ring: oklch(0.5417 0.179 288.0332);
+  --color-chart-1: oklch(0.5417 0.179 288.0332);
+  --color-chart-2: oklch(0.7042 0.1602 288.988);
+  --color-chart-3: oklch(0.5679 0.2113 276.7065);
+  --color-chart-4: oklch(0.6356 0.1922 281.8054);
+  --color-chart-5: oklch(0.4509 0.1758 279.3838);
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --color-sidebar: oklch(0.958 0.0133 286.1454);
+  --color-sidebar-foreground: oklch(0.3015 0.0572 282.4176);
+  --color-sidebar-primary: oklch(0.5417 0.179 288.0332);
+  --color-sidebar-primary-foreground: oklch(1.0 0 0);
+  --color-sidebar-accent: oklch(0.9221 0.0373 262.141);
+  --color-sidebar-accent-foreground: oklch(0.3015 0.0572 282.4176);
+  --color-sidebar-border: oklch(0.9115 0.0216 285.9625);
+  --color-sidebar-ring: oklch(0.5417 0.179 288.0332);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  /* Aplicando fuente Anisette a todo el body y encabezados */
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Anisette", system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Anisette", system-ui, sans-serif;
+    font-weight: 700;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes glow {
+    0%,
+    100% {
+      box-shadow: 0 0 20px rgba(170, 151, 196, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(170, 151, 196, 0.8);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+
+  @keyframes cosmic-drift {
+    0% {
+      transform: translate(0, 0) scale(1);
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translate(100px, -100px) scale(0.8);
+      opacity: 0;
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 3s linear infinite;
+  }
+
+  .animate-cosmic-drift {
+    animation: cosmic-drift 8s ease-in-out infinite;
+  }
+}
