@@ -12,7 +12,7 @@ export async function POST(request: Request) {
     const html = getOrderConfirmationEmailHTML(customerName, orderId, orderTotal, orderItems)
     const result = await sendEmail({
       to: email,
-      subject: `Confirmación de Pedido #${orderId} - STARDUST`,
+      subject: `Confirmación de Pedido #${orderId} - EZENZ`,
       html,
     })
 

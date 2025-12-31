@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { useRouter } from "next/navigation"
 import { useState, useEffect } from "react"
-import { Sparkles, AlertCircle } from "lucide-react"
+import { AlertCircle } from "lucide-react"
 
 export default function AdminLoginPage() {
   const [email, setEmail] = useState("")
@@ -66,12 +66,7 @@ export default function AdminLoginPage() {
 
   if (checkingSetup) {
     return (
-      <div
-        className="flex min-h-screen w-full items-center justify-center p-6"
-        style={{
-          background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-        }}
-      >
+      <div className="flex min-h-screen w-full items-center justify-center p-6 bg-black">
         <Card className="w-full max-w-sm shadow-2xl">
           <CardContent className="py-10 text-center">
             <p className="text-muted-foreground">Verificando configuración...</p>
@@ -82,19 +77,13 @@ export default function AdminLoginPage() {
   }
 
   return (
-    <div
-      className="flex min-h-screen w-full items-center justify-center p-6 text-black bg-black"
-      style={{
-        background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-      }}
-    >
+    <div className="flex min-h-screen w-full items-center justify-center p-6 bg-black">
       <div className="w-full max-w-sm">
         <Card className="shadow-2xl">
           <CardHeader className="space-y-1 text-center">
             <div className="flex justify-center mb-4">
-              <div className="flex items-center gap-2 text-purple-600">
-                
-                <span className="font-bold font-condor text-6xl text-black">{"E-ZENZ"}</span>
+              <div className="flex items-center gap-2">
+                <span className="font-bold font-condor text-6xl text-black">EZENZ</span>
               </div>
             </div>
             <CardTitle className="text-2xl">Backoffice</CardTitle>
@@ -108,7 +97,7 @@ export default function AdminLoginPage() {
                   <Input
                     id="email"
                     type="email"
-                    placeholder="admin@stardust.com"
+                    placeholder="admin@ezenz.com"
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}

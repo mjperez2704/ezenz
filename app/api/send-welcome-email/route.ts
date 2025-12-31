@@ -12,7 +12,7 @@ export async function POST(request: Request) {
     const html = getWelcomeEmailHTML(name)
     const result = await sendEmail({
       to: email,
-      subject: "¡Bienvenido a STARDUST! ✨",
+      subject: "¡Bienvenido a EZENZ!",
       html,
     })
 

@@ -6,8 +6,8 @@ import { CartProvider } from "@/lib/cart-context"
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: "EZENZ | Twist the Clock - Suplementos Premium",
-  description: "Suplementos alimenticios de calidad Premium", // Removiendo acento de "alimenticios" para evitar error btoa
+  title: "EZENZ | Suplementos Premium",
+  description: "Suplementos alimenticios de calidad Premium",
   generator: "v0.app",
 }
 

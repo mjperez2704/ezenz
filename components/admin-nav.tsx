@@ -28,11 +28,11 @@ export function AdminNav() {
     <div className="flex">
       {/* Sidebar */}
       <aside className="w-64 border-r border-border bg-card shadow-lg min-h-screen fixed left-0 top-0 bottom-0">
-        <div className="flex h-20 items-center justify-center border-b border-border px-6 bg-gradient-to-br from-purple-600 via-purple-700 to-violet-700">
+        <div className="flex h-20 items-center justify-center border-b border-border px-6 bg-black">
           <Link href="/admin" className="flex items-center gap-2">
             <Image
               src="/images/design-mode/logo.png"
-              alt="STARDUST"
+              alt="EZENZ"
               width={160}
               height={40}
               className="h-10 w-auto object-contain"

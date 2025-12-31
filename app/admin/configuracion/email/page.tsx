@@ -115,7 +115,7 @@ export default function EmailSettingsPage() {
                   type="email"
                   value={settings?.fromEmail || ""}
                   onChange={(e) => setSettings({ ...settings!, fromEmail: e.target.value })}
-                  placeholder="noreply@stardust.com"
+                  placeholder="noreply@ezenz.com"
                 />
               </div>
 
@@ -125,7 +125,7 @@ export default function EmailSettingsPage() {
                   id="fromName"
                   value={settings?.fromName || ""}
                   onChange={(e) => setSettings({ ...settings!, fromName: e.target.value })}
-                  placeholder="STARDUST"
+                  placeholder="EZENZ"
                 />
               </div>
             </div>

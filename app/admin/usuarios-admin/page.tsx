@@ -458,7 +458,7 @@ export default function AdminUsersPage() {
                 type="email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                placeholder="admin@stardust.com"
+                placeholder="admin@ezenz.com"
                 disabled={!!currentUser}
               />
             </div>

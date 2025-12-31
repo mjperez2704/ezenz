@@ -36,7 +36,7 @@ export default function MobileAppConfigPage() {
   })
 
   const [appConfig, setAppConfig] = useState({
-    app_name: "STARDUST",
+    app_name: "EZENZ",
     app_version: "1.0.0",
     force_update_version: "1.0.0",
     maintenance_mode: false,

@@ -65,7 +65,7 @@ export default function ContentManagementPage() {
     return (
       <div className="p-8 flex items-center justify-center">
         <div className="text-center space-y-4">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600 mx-auto"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-black mx-auto"></div>
           <p className="text-muted-foreground">Cargando contenido...</p>
         </div>
       </div>

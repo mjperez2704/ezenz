@@ -25,7 +25,7 @@ const statusColors = {
   confirmed: "bg-cyan-500",
   paid: "bg-indigo-500",
   completed: "bg-green-500",
-  shipped: "bg-purple-500",
+  shipped: "bg-gray-700",
   delivered: "bg-emerald-500",
   cancelled: "bg-red-500",
   refunded: "bg-orange-500",
@@ -234,7 +234,7 @@ export function OrdersTable({ orders: initialOrders }: OrdersTableProps) {
               <Button type="button" variant="outline" onClick={() => setIsTrackingDialogOpen(false)}>
                 Cancelar
               </Button>
-              <Button type="submit" className="bg-purple-600 hover:bg-purple-700">
+              <Button type="submit" className="bg-black hover:bg-gray-800">
                 Guardar
               </Button>
             </div>

@@ -124,7 +124,7 @@ export default function AdminSetupPage() {
       <div
         className="flex min-h-screen w-full items-center justify-center p-6"
         style={{
-          background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+          background: "#000000",
         }}
       >
         <Card className="w-full max-w-md shadow-2xl">
@@ -141,15 +141,15 @@ export default function AdminSetupPage() {
       <div
         className="flex min-h-screen w-full items-center justify-center p-6"
         style={{
-          background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+          background: "#000000",
         }}
       >
         <Card className="w-full max-w-md shadow-2xl">
           <CardHeader className="text-center">
             <div className="flex justify-center mb-4">
-              <div className="flex items-center gap-2 text-purple-600">
+              <div className="flex items-center gap-2 text-black">
                 <Sparkles className="h-8 w-8" />
-                <span className="text-2xl font-bold">STARDUST</span>
+                <span className="text-2xl font-bold">EZENZ</span>
               </div>
             </div>
             <CardTitle>Configuración Completa</CardTitle>
@@ -172,16 +172,16 @@ export default function AdminSetupPage() {
     <div
       className="flex min-h-screen w-full items-center justify-center p-6"
       style={{
-        background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+        background: "#000000",
       }}
     >
       <div className="w-full max-w-md">
         <Card className="shadow-2xl">
           <CardHeader className="space-y-1 text-center">
             <div className="flex justify-center mb-4">
-              <div className="flex items-center gap-2 text-purple-600">
+              <div className="flex items-center gap-2 text-black">
                 <Sparkles className="h-8 w-8" />
-                <span className="text-2xl font-bold">STARDUST</span>
+                <span className="text-2xl font-bold">EZENZ</span>
               </div>
             </div>
             <CardTitle className="text-2xl">Configuración Inicial</CardTitle>
@@ -215,7 +215,7 @@ export default function AdminSetupPage() {
                     <Input
                       id="email"
                       type="email"
-                      placeholder="admin@stardust.com"
+                      placeholder="admin@ezenz.com"
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}

@@ -1,4 +1,4 @@
-export const dynamic = "force-dynamic";
+export const dynamic = "force-dynamic"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { getStats, getAllOrders } from "@/lib/database-server"
@@ -13,7 +13,7 @@ export default async function AdminDashboard() {
     <div className="p-8">
       <div className="mb-8">
         <h1 className="text-3xl font-bold">Dashboard</h1>
-        <p className="text-muted-foreground">Bienvenido al panel de administración de STARDUST</p>
+        <p className="text-muted-foreground">Bienvenido al panel de administración de EZENZ</p>
       </div>
 
       {/* Stats Grid */}

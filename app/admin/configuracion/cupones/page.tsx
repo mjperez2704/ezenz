@@ -158,7 +158,7 @@ export default function CuponesPage() {
         </div>
         <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
           <DialogTrigger asChild>
-            <Button onClick={resetForm} className="bg-purple-600 hover:bg-purple-700">
+            <Button onClick={resetForm} className="bg-black hover:bg-gray-800">
               <Plus className="h-4 w-4 mr-2" />
               Nuevo Cupón
             </Button>
@@ -324,7 +324,7 @@ export default function CuponesPage() {
                 >
                   Cancelar
                 </Button>
-                <Button type="submit" className="bg-purple-600 hover:bg-purple-700">
+                <Button type="submit" className="bg-black hover:bg-gray-800">
                   {editingCoupon ? "Actualizar" : "Crear"} Cupón
                 </Button>
               </div>
@@ -337,7 +337,7 @@ export default function CuponesPage() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Total Cupones</CardTitle>
-            <Tag className="h-4 w-4 text-purple-600" />
+            <Tag className="h-4 w-4 text-black" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{coupons.length}</div>
