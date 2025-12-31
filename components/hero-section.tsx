@@ -19,8 +19,8 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-black/20" />
       </div>
 
-      <div className="absolute inset-0 md:hidden bg-black flex items-center justify-center">
-        <div className="w-full max-w-sm px-8">
+      <div className="absolute inset-0 md:hidden bg-black flex flex-col items-center justify-center gap-8 px-8">
+        <div className="w-full max-w-sm">
           <Image
             src="/images/design-mode/logo_header.png"
             alt="E-zenz Logo"
@@ -30,6 +30,11 @@ export function HeroSection() {
             priority
           />
         </div>
+        <Link href="/productos">
+          <Button className="bg-white hover:bg-white/90 text-black border-none px-12 py-6 text-base tracking-[0.3em] uppercase font-bold">
+            SHOP NOW
+          </Button>
+        </Link>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 text-center hidden md:flex flex-col items-center justify-end h-full pb-16">
