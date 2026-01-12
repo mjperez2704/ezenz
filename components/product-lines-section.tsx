@@ -47,15 +47,7 @@ export function ProductLinesSection() {
     <section className="relative w-full bg-white py-16 md:py-20 lg:py-24 overflow-hidden">
       <div className="absolute bottom-0 left-0 w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96 opacity-[0.03] pointer-events-none">
         {/* Background Image */}
-        <div className="absolute inset-0 z-0 bg-black">
-          <Image
-            src="/images/design-mode/valores.jpg"
-            alt="Mission Vision Background"
-            fill
-            className="object-cover text-transparent bg-transparent opacity-100"
-            quality={100}
-          />
-        </div>
+        
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -94,7 +86,7 @@ export function ProductLinesSection() {
 
                 {/* Etiqueta inferior con lotus y nombre */}
                 <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm py-2.5 px-3 flex items-center justify-center gap-2">
-                  <Image src="/logo-lotus.svg" alt="" width={18} height={18} className="opacity-70" />
+                  <Image src="/images/design-mode/loto_transparente_ok.png" alt="" width={18} height={18} className="opacity-70" />
                   <span className="text-black text-sm font-bold uppercase tracking-wide">{line.name}</span>
                 </div>
               </div>

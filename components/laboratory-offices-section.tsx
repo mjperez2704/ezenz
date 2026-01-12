@@ -66,9 +66,9 @@ export function LaboratoryOfficesSection() {
 
       {/* Content Overlay */}
       <div className="relative z-10 h-full">
-        <div className="container mx-auto px-4 sm:px-6 flex py-12 lg:py-0 lg:px-0 items-stretch w-[1920px] h-[550px]">
+        <div className="container mx-auto px-4 sm:px-6 flex py-12 lg:py-0 lg:px-0 items-stretch w-[1920px] h-[550px] flex-row">
           {/* Right side content area - starts at around 40% of width */}
-          <div className="w-full text-right text-white bg-transparent bg-transparent h-[500px] mr-0 lg:w-[950px] lg:ml-[600px] mt-10">
+          <div className="w-full text-right text-white bg-transparent bg-transparent h-[500px] mr-0 mt-10 lg:w-[1665px] lg:ml-60">
             {/* Title */}
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 uppercase tracking-[0.25em] text-center text-card lg:mb-12">
               LABORATORIO
@@ -120,7 +120,7 @@ export function LaboratoryOfficesSection() {
             </div>
           </div>
         </div>  
-          <div className="w-full bg-transparent bg-transparent h-[500px] text-left lg:ml-[50px] mr-[100px] text-black lg:w-[950px]">
+          <div className="w-full bg-transparent bg-transparent h-[500px] text-left text-black lg:ml-[50px] mr-40 lg:w-[650px]">
             {/* Title */}
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 uppercase tracking-[0.25em] lg:mb-12 text-black text-center">
               OFICINAS

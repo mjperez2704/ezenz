@@ -89,7 +89,7 @@ export function ProductsClient({ initialProducts }: ProductsClientProps) {
   }
 
   return (
-    <section className="relative py-16 px-4 sm:px-6 lg:px-8">
+    <section className="relative py-16 px-4 sm:px-6 lg:px-8 text-black">
       <div className="max-w-7xl mx-auto">
         {/* Filters */}
         <ProductFilters onFilterChange={handleFilterChange} resultsCount={filteredProducts.length} />

@@ -38,7 +38,7 @@ export default async function ProductsPage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto text-center font-condor">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 text-balance font-condor tracking-wider">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-balance font-condor tracking-wider text-white">
             NUESTRA{" "}
             <span className="bg-gradient-to-r font-condor from-[rgb(170,151,196)] to-[rgb(201,18,64)] bg-clip-text text-transparent">
               COLECCIÓN
